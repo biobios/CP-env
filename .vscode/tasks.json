@@ -29,6 +29,7 @@
             "dependsOn":["make debug dir"],
             "group": {
                 "kind": "build",
+                "isDefault": true,
             }
         }
     ]
