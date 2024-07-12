@@ -22,6 +22,7 @@
                 "-Wextra",
                 "-O2",
                 "-g",
+                "-I./include",
                 "-o",
                 "'${workspaceFolder}/debug/a.out'",
                 "'${file}'",
@@ -31,6 +32,11 @@
                 "kind": "build",
                 "isDefault": true,
             }
-        }
+        },
+        {
+            "label": "install acl",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/install_acl.sh",
+        },
     ]
 }
