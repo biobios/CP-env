@@ -29,8 +29,11 @@
             "dependsOn":["make debug dir"],
             "group": {
                 "kind": "build",
-                "isDefault": true,
-            }
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
         },
         {
             "label": "install acl",
