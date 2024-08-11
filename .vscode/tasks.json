@@ -16,7 +16,7 @@
             "label": "debug build",
             "type": "shell",
             "command": "g++",
-            "args":[
+            "args": [
                 "-std=gnu++20",
                 "-Wall",
                 "-Wextra",
@@ -24,9 +24,11 @@
                 "-I./include",
                 "-o",
                 "'${workspaceFolder}/debug/a.out'",
-                "'${file}'",
+                "'${file}'"
             ],
-            "dependsOn":["make debug dir"],
+            "dependsOn": [
+                "make debug dir"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -38,7 +40,7 @@
         {
             "label": "install acl",
             "type": "shell",
-            "command": "${workspaceFolder}/scripts/install_acl.sh",
-        },
+            "command": "${workspaceFolder}/scripts/install_acl.sh"
+        }
     ]
 }
