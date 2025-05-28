@@ -33,6 +33,7 @@
 			"#include <algorithm>",
 			"#include <utility>",
 			"#include <cmath>",
+			"#include <cstdint>",
 			"",
 			"using namespace std;",
 			"",
